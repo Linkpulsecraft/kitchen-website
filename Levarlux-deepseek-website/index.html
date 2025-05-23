@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KitchenAI | Future-Proof Web Design & Automation for Remodelers</title>
+    <meta name="description" content="AI-powered web design and automation solutions specifically crafted for kitchen remodeling businesses to generate more leads and streamline operations.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    
+    <style>
+        /* CSS will go here in production, but separated for this demo */
+        :root {
+            --primary: #0f0c29;
+            --secondary: #302b63;
+            --accent: #ff4d4d;
+            --accent-light: #f9cb28;
+            --text: #f8f9fa;
+            --text-secondary: #adb5bd;
+            --bg-dark: #0a081c;
+            --bg-light: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text);
+            background-color: var(--bg-dark);
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body>
+    <!-- Preloader Animation -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-spinner"></div>
+            <div class="preloader-text">Preparing Your Digital Kitchen</div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="logo">
+                <span class="logo-icon">K</span>
+                <span class="logo-text">Kitchen<span class="logo-highlight">AI</span></span>
+            </a>
+            
+            <div class="nav-links">
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#process" class="nav-link">Process</a>
+                <a href="#results" class="nav-link">Results</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link cta-nav">Book Call</a>
+            </div>
+            
+            <button class="mobile-menu-toggle">
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <canvas id="particle-canvas"></canvas>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Transform</span> Your Kitchen Remodeling Business
+                </h1>
+                <p class="hero-subtitle">
+                    AI-powered web design & automation solutions that generate <span class="highlight">5X more leads</span> while you focus on what you do best
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="cta-button pulse">
+                        Book Your Free Strategy Session
+                    </a>
+                    <div class="trust-badges">
+                        <div class="badge">
+                            <span class="badge-icon">🏆</span>
+                            <span class="badge-text">Premium Design</span>
+                        </div>
+                        <div class="badge">
+                            <span class="badge-icon">🤖</span>
+                            <span class="badge-text">AI Automation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <div class="image-container">
+                    <img src="hero-dashboard.webp" alt="AI-powered kitchen remodeling dashboard" class="main-image">
+                    <div class="floating-element floating-1">
+                        <img src="notification-bell.svg" alt="Lead notification">
+                    </div>
+                    <div class="floating-element floating-2">
+                        <img src="calendar-icon.svg" alt="Appointment booked">
+                    </div>
+                    <div class="floating-element floating-3">
+                        <img src="chart-up.svg" alt="Revenue growth">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span class="scroll-text">Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- Client Logos Marquee -->
+    <section class="clients-marquee">
+        <div class="marquee-track">
+            <div class="marquee-item">
+                <img src="client-logo-1.svg" alt="Dream Kitchens Inc.">
+            </div>
+            <div class="marquee-item">
+                <img src="client-logo-2.svg" alt="Luxury Kitchen Designs">
+            </div>
+            <div class="marquee-item">
+                <img src="client-logo-3.svg" alt="Modern Cabinetry Co.">
+            </div>
+            <div class="marquee-item">
+                <img src="client-logo-4.svg" alt="Elite Remodelers">
+            </div>
+            <div class="marquee-item">
+                <img src="client-logo-5.svg" alt="Gourmet Spaces">
+            </div>
+            <!-- Duplicated for seamless loop -->
+            <div class="marquee-item">
+                <img src="client-logo-1.svg" alt="Dream Kitchens Inc.">
+            </div>
+            <div class="marquee-item">
+                <img src="client-logo-2.svg" alt="Luxury Kitchen Designs">
+            </div>
+            <div class="marquee-item">
+                <img src="client-logo-3.svg" alt="Modern Cabinetry Co.">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="section-header">
+            <h2 class="section-title">
+                <span class="section-title-label">Our Solutions</span>
+                Designed Specifically for <span class="highlight">Kitchen Remodelers</span>
+            </h2>
+            <p class="section-subtitle">
+                We combine stunning design with smart automation to give you an unfair advantage in your market
+            </p>
+        </div>
+        
+        <div class="services-grid">
+            <!-- Service 1 -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="web-design-icon.svg" alt="Web Design">
+                </div>
+                <h3 class="service-title">Premium Web Design</h3>
+                <p class="service-description">
+                    Custom websites that showcase your kitchen transformations and convert visitors into booked consultations.
+                </p>
+                <ul class="service-features">
+                    <li>Before/After galleries</li>
+                    <li>3D kitchen visualizer</li>
+                    <li>Lead capture optimized</li>
+                    <li>Mobile-first design</li>
+                </ul>
+                <a href="#web-design" class="service-link">See examples →</a>
+            </div>
+            
+            <!-- Service 2 -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="ai-automation-icon.svg" alt="AI Automation">
+                </div>
+                <h3 class="service-title">AI Lead Automation</h3>
+                <p class="service-description">
+                    Smart systems that qualify leads, book appointments, and follow up automatically.
+                </p>
+                <ul class="service-features">
+                    <li>24/7 lead qualification</li>
+                    <li>Auto-scheduling</li>
+                    <li>Personalized follow-ups</li>
+                    <li>CRM integration</li>
+                </ul>
+                <a href="#ai-automation" class="service-link">How it works →</a>
+            </div>
+            
+            <!-- Service 3 -->
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="marketing-icon.svg" alt="Marketing">
+                </div>
+                <h3 class="service-title">Targeted Marketing</h3>
+                <p class="service-description">
+                    Strategic campaigns that reach homeowners actively considering kitchen renovations.
+                </p>
+                <ul class="service-features">
+                    <li>Google & Meta ads</li>
+                    <li>Video portfolio ads</li>
+                    <li>Retargeting sequences</li>
+                    <li>Local SEO optimization</li>
+                </ul>
+                <a href="#marketing" class="service-link">Our approach →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results" class="results">
+        <div class="container">
+            <div class="results-header">
+                <h2 class="section-title">
+                    <span class="section-title-label">Proven Results</span>
+                    What Our Clients <span class="highlight">Achieve</span>
+                </h2>
+                <p class="section-subtitle">
+                    These are actual results from kitchen remodeling businesses using our solutions
+                </p>
+            </div>
+            
+            <div class="results-grid">
+                <!-- Result 1 -->
+                <div class="result-card">
+                    <div class="result-value">317%</div>
+                    <div class="result-label">Increase in Leads</div>
+                    <div class="result-description">
+                        For a mid-sized kitchen remodeler in Chicago within first 3 months
+                    </div>
+                </div>
+                
+                <!-- Result 2 -->
+                <div class="result-card">
+                    <div class="result-value">42%</div>
+                    <div class="result-label">Higher Conversion</div>
+                    <div class="result-description">
+                        From lead to booked consultation using our AI qualification system
+                    </div>
+                </div>
+                
+                <!-- Result 3 -->
+                <div class="result-card">
+                    <div class="result-value">15-20</div>
+                    <div class="result-label">Hours Saved Weekly</div>
+                    <div class="result-description">
+                        On admin tasks through our automation solutions
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="section-title-label">Our Process</span>
+                    How We <span class="highlight">Transform</span> Your Business
+                </h2>
+                <p class="section-subtitle">
+                    A streamlined approach tailored for kitchen remodeling professionals
+                </p>
+            </div>
+            
+            <div class="process-steps">
+                <!-- Step 1 -->
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Discovery & Strategy</h3>
+                        <p class="step-description">
+                            We analyze your current digital presence, competitors, and ideal customer profile to create a custom growth plan.
+                        </p>
+                    </div>
+                    <div class="step-icon">
+                        <img src="discovery-icon.svg" alt="Discovery">
+                    </div>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Design & Development</h3>
+                        <p class="step-description">
+                            Your premium website is crafted to showcase your kitchen transformations and convert visitors.
+                        </p>
+                    </div>
+                    <div class="step-icon">
+                        <img src="design-icon.svg" alt="Design">
+                    </div>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3 class="step-title">AI Integration</h3>
+                        <p class="step-description">
+                            We implement smart automation to handle leads, appointments, and follow-ups.
+                        </p>
+                    </div>
+                    <div class="step-icon">
+                        <img src="ai-icon.svg" alt="AI Integration">
+                    </div>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Launch & Growth</h3>
+                        <p class="step-description">
+                            Your new system goes live, and we continuously optimize for maximum lead generation.
+                        </p>
+                    </div>
+                    <div class="step-icon">
+                        <img src="launch-icon.svg" alt="Launch">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="section-title-label">Client Success</span>
+                    What Remodelers <span class="highlight">Say</span>
+                </h2>
+            </div>
+            
+            <div class="testimonial-slider">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-text">
+                            "Working with KitchenAI transformed our lead generation. We went from struggling to book consultations to having a waiting list for our premium kitchen remodels."
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="client-1.jpg" alt="Michael R.">
+                            </div>
+                            <div class="author-info">
+                                <div class="author-name">Michael R.</div>
+                                <div class="author-title">Owner, Luxury Kitchen Designs</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-text">
+                            "The AI automation saves us 15+ hours per week on follow-ups and scheduling. Now we can focus on designing amazing kitchens instead of admin work."
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="client-2.jpg" alt="Sarah K.">
+                            </div>
+                            <div class="author-info">
+                                <div class="author-name">Sarah K.</div>
+                                <div class="author-title">CEO, Modern Culinary Spaces</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h2 class="cta-title">
+                        Ready to <span class="highlight">Transform</span> Your Kitchen Remodeling Business?
+                    </h2>
+                    <p class="cta-subtitle">
+                        Book your free strategy session today and discover how we can help you:
+                    </p>
+                    <ul class="cta-benefits">
+                        <li>Generate 3-5X more qualified leads</li>
+                        <li>Automate your scheduling & follow-ups</li>
+                        <li>Showcase your work with a premium website</li>
+                        <li>Stand out from competitors in your market</li>
+                    </ul>
+                </div>
+                
+                <div class="cta-form">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone (optional)">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="business" name="business" required placeholder="Business Name">
+                        </div>
+                        <div class="form-group">
+                            <select id="projects" name="projects" required>
+                                <option value="" disabled selected>Average Projects Per Month</option>
+                                <option value="1-5">1-5</option>
+                                <option value="5-10">5-10</option>
+                                <option value="10-20">10-20</option>
+                                <option value="20+">20+</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="cta-button">
+                            Book My Free Strategy Session
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <div class="footer-logo">
+                        <span class="logo-icon">K</span>
+                        <span class="logo-text">Kitchen<span class="logo-highlight">AI</span></span>
+                    </div>
+                    <p class="footer-about-text">
+                        Specialized web design and AI automation solutions for kitchen remodeling businesses to generate more leads and streamline operations.
+                    </p>
+                </div>
+                
+                <div class="footer-col footer-links">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#process">Our Process</a></li>
+                        <li><a href="#results">Case Studies</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col footer-contact">
+                    <h3 class="footer-title">Get In Touch</h3>
+                    <ul>
+                        <li><a href="mailto:hello@kitchenai.com">hello@kitchenai.com</a></li>
+                        <li><a href="tel:+18005551234">(800) 555-1234</a></li>
+                        <li>123 Design Ave, Suite 500<br>San Francisco, CA 94107</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2023 KitchenAI. All rights reserved.
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">Facebook</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // JavaScript will go here in production
+        document.addEventListener('DOMContentLoaded', function() {
+            // Preloader
+            window.addEventListener('load', function() {
+                document.querySelector('.preloader').style.display = 'none';
+            });
+            
+            // Particle canvas animation
+            const initParticleCanvas = () => {
+                const canvas = document.getElementById('particle-canvas');
+                if (!canvas) return;
+                
+                // Particle animation code would go here
+                // Similar to the React implementation but in vanilla JS
+            };
+            
+            initParticleCanvas();
+            
+            // Mobile menu toggle
+            const menuToggle = document.querySelector('.mobile-menu-toggle');
+            if (menuToggle) {
+                menuToggle.addEventListener('click', function() {
+                    document.querySelector('.nav-links').classList.toggle('active');
+                    this.classList.toggle('active');
+                });
+            }
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+            
+            // Form submission
+            const contactForm = document.getElementById('contact-form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    // Form handling logic would go here
+                });
+            }
+        });
+    </script>
+</body>
+</html>
